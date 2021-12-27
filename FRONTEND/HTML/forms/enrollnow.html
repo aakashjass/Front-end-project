@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Registaration Form</title>
+        <link rel="stylesheet" href="enrollnow.css" id="my-form">
+    </head>
+    <style>
+        div{
+          background-image: url('https://coolbackgrounds.io/images/backgrounds/index/disco-dba865f1.png');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        </style> 
+    <body>
+        <h1>The Brainbelt School of Architecture Registaration Form</h1>
+        <div class="container">
+            <form action="https://formspree.io/f/xpzbwwww" method="post">
+            <div class="row">
+                <div class="col-10">
+                    <label for="fname">First Name:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="fname"  name="firstname"  placeholder="Enter your first name" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="lname">Last Name:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="lname" name="lastname" placeholder="Enter your last name"required >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="col-90">
+                    <input type="email" id="email" name="email" placeholder="it should contain @,."required > 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="mobile">Mobile:</label>
+                </div>
+                <div class="col-90">
+                    <input type="tel" id="mobile" name="mobile" placeholder="only 10 digits are allowed" required >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="gender" required>Gender:</label>
+                </div>
+                <div class="col-90">
+                    <input type="radio" id="male" name="gender" value="male"/>Male
+                    <input type="radio" id="female" name="gender" value="female"/>Female
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="dob">Date Of Birth:</label>
+                </div>
+                <div class="col-90">
+                    <input type="Date" id="dob" name="dob" required >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="address">Address:</label>
+                </div>
+                <div class="col-90">
+                    <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="city">City:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="city" name="city" maxlength="10"required >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="pincode"> PINCODE:</label>
+                </div>
+                <div class="col-90">
+                    <input type="number" id="pin" name="pin" maxlength="6" required >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="State" required >State:</label>
+                </div>
+                <div class="col-90">
+                    <select name="State" id="State">
+                        <option value="State">State</option>
+                        <option value="andhra pradesh">Andhra Pradesh</option>
+                        <option value="Maharastra">Maharastra</option>
+                        <option value="kerala">Kerala</option>
+                        <option value="bihar">Bihar</option>
+                        <option value="gujarat">Gujarat</option>
+                        <option value="tamilnadu">Tamilnadu</option>
+                        <option value="madhya pradesh">Madhya pradesh</option>
+                        <option value="rajasthan">Rajasthan</option>
+                        <option value="punjab">Punjab</option>
+                        <option value="karnataka">Karnataka</option>
+                        <option value="west bengal">West bengal</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Delhi">Delhi</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="specialization:">Course:</label>
+                </div>
+                <div class="col-90">
+                    <input type="checkbox" class="specialization" id="B.arch" name="specialization[]" value="Bachelour of Architecture">B. Arch<br/>
+                    <input type="checkbox" class="specialization" id="M.arch" name="specialization[]" value="Master of architecture">M.Arch<br/>
+                    <input type="checkbox" class="specialization" id="M.E. design" name="specialization[]" value="M.E. design">M.E. design<br/>
+                    <input type="checkbox" class="specialization" id="Ph.D." name="specialization[]" value="Ph.D.">Ph.D.<br/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="password">Password:</label>
+                </div>
+                <div class="col-90">
+                    <input type="password" id="password" name="password" maxlength="8" required>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="ENROLL">
+            </div>  
+        </form>   
+        </div>  
+    </body>
+</html>
